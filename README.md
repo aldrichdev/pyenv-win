@@ -43,6 +43,7 @@ This project was forked from [rbenv-win][3] and modified for [pyenv][1]. It is n
    ```pwsh
    Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
    ```
+   1. If you encounter any errors at this step, try running `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process`, then run the command again.
 
 2. Reopen PowerShell
 3. Run `pyenv --version` to check if the installation was successful.
